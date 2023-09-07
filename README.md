@@ -115,6 +115,7 @@ USE_BASIC_ATTENTION_WITH_FEATURE: True
 1. Takao Yamanaka, Tatsuya Suzuki, Taiki Nobutsune, and Chenjunlin Wu, "Multi-Scale Estimation for Omni-Directional Saliency Maps Using Learnable Equator Bias," IEICE Transactions on Information and Systems, Vol. E106-D, No. 10, 2023.
 2. T. Suzuki and T. Yamanaka, "Saliency Map Estimation for Omni-Directional Image Considering Prior Distributions," IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2018, Miyazaki, Japan.  [arXiv http://arxiv.org/abs/1807.06329]
 3.  T. Oyama and T. Yamanaka, "Influence of Image Classification Accuracy on Saliency Map Estimation," CAAI Transactions on Intelligence Technology, vol. 3, issue 3, 2018, pp. 140-152. [IET Digital Library https://digital-library.theiet.org/content/journals/10.1049/trit.2018.1012] | [arXiv https://arxiv.org/abs/1807.10657]
+4. Akis Linardos, Matthias Kümmerer, Ori Press, and Matthias Bethge, "DeepGaze IIE: Calibrated prediction in and out-of-domain for state-of-the-art saliency modeling," ICCV 2021. https://arxiv.org/abs/2105.12441
 
 # Versions
 The codes were confired with the following versions.
