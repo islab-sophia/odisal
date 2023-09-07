@@ -1,0 +1,5 @@
+estimate_resume: logs/salient360_2018_BA2_with_feature_100_110_120/densesalbi3/ckpt/checkpoint_20230903-195522_model_best.pth.tar
+evaluate_log_path: eval/DenseSal_BA2_with_features_ch512_100_110_120_20230903-203842.csv
+finish_time_stamp: 20230903-211130
+salmap_path: outputs/densesalbi3/20230903-202826/ODIsaliencymap
+start_time_stamp: 20230903-195522

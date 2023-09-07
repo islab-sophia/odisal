@@ -1,0 +1,92 @@
+COMMENT:
+NAME: DenseSal_BA2_with_features_ch512_100
+TRAIN:
+  MODEL:
+    TYPE: ODI
+    ARCH: densesalbi3
+    EXTRACT: E26
+    VIEW_ANGLE: 100
+    USE_MULTISCALE_MODEL: False #True
+  DATA:
+    DATASET_CFG_PATH: ../DataSets/salient360_2018_SVA_100/salient360_2018_SVA_E26_1600_800_500_500.cfg
+    INPUT_IMAGE_WIDTH: 500
+    INPUT_IMAGE_HEIGHT: 500
+  DIR:
+    ROOT_LOG_DIR: logs
+    ROOT_OUTPUT_DIR: outputs
+    #ROOT_DATASET_DIR: datasets
+    MAPS_DIR: maps
+  SETTING:
+    RESUME: ../pretrained/densesalbi3/checkpoint_20190413-085515_model_best.pth.tar
+    EPOCHS: 5
+    BATCH_SIZE: 1
+    WORKERS: 4
+    SAVE_STEP: 1
+    # RMSprop or sgd
+    OPTIMIZER: RMSprop
+    ALPHA: 0.995
+    WEIGHT_DECAY: 5e-4
+    MAIN:
+      LR: 1e-5
+      FIX_MAIN_NET: False
+    BIAS:
+      USE_CENTER_BIAS_LAYER: False
+      USE_EQUATOR_BIAS_LAYER: True
+      EQUATOR_BIAS_LAYER_LOADING_CENTER_BIAS: False
+      USE_CONSTANT_EQUATOR_BIAS: False
+      LR: 1e-4
+      USE_FUSION_LAYER: False
+      USE_ATTENTION_LAYER: False #True
+      USE_BASIC_ATTENTION_LAYER: False
+      USE_BASIC_ATTENTION_V2_LAYER: False #True
+      USE_BASIC_ATTENTION_WITH_FEATURE: False #True
+      ATTENTION_LAYER_CH: 512
+ESTIMATE:
+  MODEL:
+    TYPE: ODI
+    ARCH: densesalbi3
+    EXTRACT: E26
+    VIEW_ANGLE: 100
+    USE_MULTISCALE_MODEL: False #True
+  DATA:
+    IMAGE_FILES: ../DataSets/salient360_2018/Stimuli/*.jpg
+    # equirectangular or planar
+    PROJECTION: equirectangular
+    RESIZE_WIDTH: 1600
+    RESIZE_HEIGHT: 800
+    EXTRACT_WIDTH: 500
+    EXTRACT_HEIGHT: 500
+    CONSTANT_EQUATOR_BIAS_PATH:
+  DIR:
+    ROOT_OUTPUT_DIR: outputs
+    MAPS_DIR: maps
+  SETTING:
+    RESUME: 
+    BATCH_SIZE: 1
+    WORKERS: 4
+    BIAS:
+      USE_CENTER_BIAS_LAYER: False
+      USE_EQUATOR_BIAS_LAYER: True
+      USE_CONSTANT_EQUATOR_BIAS: False
+      USE_FUSION_LAYER: False
+      USE_ATTENTION_LAYER: False #True
+      USE_BASIC_ATTENTION_LAYER: False
+      USE_BASIC_ATTENTION_V2_LAYER: False #True
+      USE_BASIC_ATTENTION_WITH_FEATURE: False #True
+      ATTENTION_LAYER_CH: 512
+EVALUATE:
+  DATA:
+    EVALUATE_DATASET_CSV_PATH: ../DataSets/salient360_2018/salient360_2018_2017.csv
+    SALMAP_PATH: ""
+    TRAIN: True
+    VAL: True
+    TEST: True
+    INPUT_WIDTH: 2048
+    INPUT_HEIGHT: 1024
+  DIR:
+    ROOT_OUTPUT_DIR: outputs
+    ROOT_EVALUATE_DIR: eval
+  SETTING:
+    NAME:  DenseSal_BA2_with_features_ch512_100
+    GAUSSIAN_FILTER: [ 0, 2, 4, 6, 8, 10 ]
+    SAMPLING_TYPE: [ Sinusoidal ]
