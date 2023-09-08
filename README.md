@@ -7,16 +7,16 @@ This repository contains the pytorch implementation of omni-directional saliency
 
 # Downloads
 In addition to this repository, download the following zip files, unzip them, and place them under the odisal folders.
-- [DataSets.zip](https://drive.google.com/file/d/1zDR8rvIWyMWoC4uxuvh9oYCGTVfFHhj2/view?usp=sharing) (5.94GB): /odisal/Datasets
-- [pretrained.zip](https://drive.google.com/file/d/1dUtuEAlvceTFln73EODfTjyg-t5xn_to/view?usp=sharing) (928.3MB): /odisal/pretrained
-- [maps.zip](https://drive.google.com/file/d/15m9dDqT1u7wNVcmCfZqaYElGZlbphSZT/view?usp=sharing) (36.2MB): /odisal/program/maps
-- [pytorch_dpn_pretrained.zip](https://drive.google.com/file/d/1na7enRRgzMVGq63vyZV1r1E32K4rtpWx/view?usp=sharing) (1.1GB): /odisal/program/models/pytorch_dpn_pretrained
-- [deepgaze_pytorch.zip](https://drive.google.com/file/d/12ihDSrb62nM2QYoT0ND9ZYLQSm64B24W/view?usp=sharing) (389.3MB): /odisal/program/models/deepgaze_pytorch
+- [DataSets.zip](https://drive.google.com/file/d/1zDR8rvIWyMWoC4uxuvh9oYCGTVfFHhj2/view?usp=sharing) (5.94GB): odisal/Datasets
+- [pretrained.zip](https://drive.google.com/file/d/1dUtuEAlvceTFln73EODfTjyg-t5xn_to/view?usp=sharing) (928.3MB): odisal/pretrained
+- [maps.zip](https://drive.google.com/file/d/15m9dDqT1u7wNVcmCfZqaYElGZlbphSZT/view?usp=sharing) (36.2MB): odisal/program/maps
+- [pytorch_dpn_pretrained.zip](https://drive.google.com/file/d/1na7enRRgzMVGq63vyZV1r1E32K4rtpWx/view?usp=sharing) (1.1GB): odisal/program/models/pytorch_dpn_pretrained
+- [deepgaze_pytorch.zip](https://drive.google.com/file/d/12ihDSrb62nM2QYoT0ND9ZYLQSm64B24W/view?usp=sharing) (389.3MB): odisal/program/models/deepgaze_pytorch
 
 Since the following folders include only output files, it does not have to be downloaded.
-- [logs.zip](https://drive.google.com/file/d/1mIsOeSEPnD9LcD6WwfYoRBWWGeV2mOqj/view?usp=sharing) (2.53GB): /odisal/program/logs
-- [eval.zip](https://drive.google.com/file/d/13e6Vr-0kHvXjuiB5-GJdc6xyhLzE2DHK/view?usp=sharing) (53KB): /odisal/program/eval
-- [outputs.zip](https://drive.google.com/file/d/1Jt-3J6e_07Ruv85Wywu-iyPoR0D0Obnh/view?usp=sharing) (72MB): /odisal/program/outputs
+- [logs.zip](https://drive.google.com/file/d/1mIsOeSEPnD9LcD6WwfYoRBWWGeV2mOqj/view?usp=sharing) (2.53GB): odisal/program/logs
+- [eval.zip](https://drive.google.com/file/d/13e6Vr-0kHvXjuiB5-GJdc6xyhLzE2DHK/view?usp=sharing) (53KB): odisal/program/eval
+- [outputs.zip](https://drive.google.com/file/d/1Jt-3J6e_07Ruv85Wywu-iyPoR0D0Obnh/view?usp=sharing) (72MB): odisal/program/outputs
 
 # Examples
 Multi-Scale Estimation (Multi-Angles of View; MAV)
