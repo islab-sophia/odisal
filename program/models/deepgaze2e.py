@@ -1,7 +1,8 @@
+# https://github.com/matthias-k/DeepGaze
+
 from collections import OrderedDict
 import importlib
 import os
-
 
 import torch
 import torch.nn as nn
