@@ -1,6 +1,6 @@
 # odisal
 This repository contains the pytorch implementation of omni-directional saliency map estimation in [IEICE](https://www.ieice.org/eng_r/index.html) journal paper:
-- Takao Yamanaka, Tatsuya Suzuki, Taiki Nobutsune, and Chenjunlin Wu, "Multi-Scale Estimation for Omni-Directional Saliency Maps Using Learnable Equator Bias," IEICE Transactions on Information and Systems, Vol. E106-D, No. 10, 2023.
+- Takao Yamanaka, Tatsuya Suzuki, Taiki Nobutsune, and Chenjunlin Wu, "Multi-Scale Estimation for Omni-Directional Saliency Maps Using Learnable Equator Bias," IEICE Transactions on Information and Systems, Vol. E106-D, No. 10, 2023. https://arxiv.org/abs/2309.08139
 
 ![ODI](samples/P93.jpg)
 ![ODISaliency](samples/P93_color.png)
@@ -112,7 +112,7 @@ USE_BASIC_ATTENTION_WITH_FEATURE: True
 ```
 
 # References
-1. Takao Yamanaka, Tatsuya Suzuki, Taiki Nobutsune, and Chenjunlin Wu, "Multi-Scale Estimation for Omni-Directional Saliency Maps Using Learnable Equator Bias," IEICE Transactions on Information and Systems, Vol. E106-D, No. 10, 2023.
+1. Takao Yamanaka, Tatsuya Suzuki, Taiki Nobutsune, and Chenjunlin Wu, "Multi-Scale Estimation for Omni-Directional Saliency Maps Using Learnable Equator Bias," IEICE Transactions on Information and Systems, Vol. E106-D, No. 10, 2023. https://arxiv.org/abs/2309.08139
 2. T. Suzuki and T. Yamanaka, "Saliency Map Estimation for Omni-Directional Image Considering Prior Distributions," IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2018, Miyazaki, Japan. 
 http://arxiv.org/abs/1807.06329
 3.  T. Oyama and T. Yamanaka, "Influence of Image Classification Accuracy on Saliency Map Estimation," CAAI Transactions on Intelligence Technology, vol. 3, issue 3, 2018, pp. 140-152. 
