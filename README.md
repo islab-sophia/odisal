@@ -123,7 +123,7 @@ https://arxiv.org/abs/2105.12441
 https://github.com/matthias-k/DeepGaze
 
 # Versions
-The codes were confired with the following versions.
+The codes were confirmed with the following versions.
 - Python 3.9.7
 - PyTorch 2.0.0+cu117
 - NVIDIA Driver: 510.47.03
